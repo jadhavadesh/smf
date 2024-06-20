@@ -1,0 +1,253 @@
+
+.landing-container {
+    margin-top: 30px;
+}
+
+.landing-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 -15px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.landing-image {
+    padding: 30px 30px 30px 0;
+}
+
+.content-wrapper {
+    padding: 30px;
+}
+
+.sectionTopBtmSpace {
+    padding: 100px 0;
+}
+
+.what-we-do-text {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 0 210px;
+}
+
+.titleMaxWidth {
+    max-width: 545px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.titledesc {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #425466;
+}
+
+.btnStyle {
+    border-radius: 2px;
+    background: #570099;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    display: inline-block;
+    padding: 12px 24px;
+    min-width: 140px;
+}
+
+.gridBox {
+    display: flex;
+    align-items: flex-start;
+    margin-left: -8px;
+    margin-right: -8px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    >.col {
+        padding-left: 8px;
+        padding-right: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gridImg {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        +.gridImg {
+            margin-top: 16px;
+        }
+    }
+}
+
+.sectionTopBtmSpace {
+    padding: 100px 0;
+    background: radial-gradient(174.44% 174.44% at 51.32% 156.06%, #1d0033 0, #08000e 100%);
+    &.pb-0 {
+        padding-bottom: 0;
+    }
+
+    &.overlapSection {
+        padding-top: 160px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
+
+}
+
+.joinUsSection {
+    flex: 0 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+}
+
+.joinOurTeam {
+    color: #e9ccff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 1rem !important;
+    margin-top: 0;
+}
+
+.missionTitle{
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 1.5rem !important;
+    margin-top: 0;
+}
+
+.missionText {
+    color: #e9ccff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 3rem !important;
+}
+
+.joinBtn {
+    border-radius: 2px;
+    background: #570099;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    display: inline-block;
+    padding: 12px 24px;
+    min-width: 140px;
+    margin-right: 1rem !important;
+}
+
+.joinUsImgContainer {
+    display: block !important;
+    margin-top: 3rem !important;
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.joinUsImg {
+    display: flex;
+    margin-right: auto !important;
+    margin-left: auto !important;
+
+    .imgCnt {
+        max-width: 168px;
+        width: 100%;
+        padding: 0 8px;
+        border-radius: 4px;
+
+        +.imgCnt {
+            margin-top: 16px;
+        }
+
+        .image {
+            min-width: 152px;
+            min-height: 152px;
+            object-fit: cover;
+        }
+
+        .heightedImage {
+            min-width: 152px;
+            min-height: 320px;
+            object-fit: cover;
+        }
+    }
+
+    .hoverImage {
+        display: none;
+    }
+
+    &.hovered {
+        .loadImage {
+            display: none;
+        }
+
+        .hoverImage {
+            display: block;
+        }
+    }
+
+    .joinText {
+        font-size: 20px;
+        font-weight: 600;
+        color: #70708F;
+        position: absolute;
+        top: 100%;
+        transition: top .3s;
+    }
+
+    .centerImgCnt {
+        min-height: 152px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #570099;
+        border-radius: 4px;
+
+        &.hoverBtn {
+            background-color: #EFEFF1;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+
+            img {
+                margin-bottom: 0;
+                transition: margin-bottom .3s;
+            }
+
+            &:hover {
+                img {
+                    margin-bottom: 25px;
+                }
+
+                .joinText {
+                    top: 70%;
+                }
+            }
+        }
+    }
+
+}
+
